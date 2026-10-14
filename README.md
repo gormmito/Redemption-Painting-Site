@@ -11,6 +11,6 @@ All settings are at the top of `script.js`:
 - **Photos**: gallery photos live in `images/work/` (full size, max 1600px) and `images/work/thumbs/` (800px). List them in `GALLERY_PHOTOS` with a category (`exterior`, `interior`, `cabinets`, `washing`). Before/after pairs go in `BEFORE_AFTER`.
 - **Hero photo**: `images/work/hero.jpg` (`hero-alt.jpg` is the runner-up).
 - House numbers and license plates in the photos have been blurred for the homeowners' privacy; do the same for any new photos.
-- **Google Form**: paste the form link into `GOOGLE_FORM_URL` and it replaces the built-in estimate form. When it's left empty, the built-in form opens an email to Greg.
+- **Contact**: the site has no form on purpose. Greg prefers calls, so every button dials 559-960-8613.
 
 Contact: Greg · 559-960-8613 · 1drummer1@gmail.com
