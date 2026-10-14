@@ -1,6 +1,6 @@
 # Redemption Painting & Pressure Washing
 
-Website for Greg's business: residential interior & exterior painting and full property pressure washing, plus roof coatings / exterior waterproofing. No money down, senior & military discounts.
+Website for Greg's business: residential interior & exterior painting and full property pressure washing, plus roof coatings / exterior waterproofing. 40+ years of experience, no money down, senior & military discounts.
 
 Plain HTML/CSS/JS, no build step. Open `index.html` in a browser to view it.
 
@@ -8,9 +8,9 @@ Plain HTML/CSS/JS, no build step. Open `index.html` in a browser to view it.
 
 All settings are at the top of `script.js`:
 
-- **Photos**: put image files in `images/` and list them in `GALLERY_PHOTOS`, e.g.
-  `{ src: "images/blue-house.jpg", caption: "Exterior repaint" }`
-- **Hero photo**: save the main header photo as `images/hero.jpg`.
+- **Photos**: gallery photos live in `images/work/` (full size, max 1600px) and `images/work/thumbs/` (800px). List them in `GALLERY_PHOTOS` with a category (`exterior`, `interior`, `cabinets`, `washing`). Before/after pairs go in `BEFORE_AFTER`.
+- **Hero photo**: `images/work/hero.jpg` (`hero-alt.jpg` is the runner-up).
+- House numbers and license plates in the photos have been blurred for the homeowners' privacy; do the same for any new photos.
 - **Google Form**: paste the form link into `GOOGLE_FORM_URL` and it replaces the built-in estimate form. When it's left empty, the built-in form opens an email to Greg.
 
 Contact: Greg · 559-960-8613 · 1drummer1@gmail.com
