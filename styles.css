@@ -77,6 +77,9 @@ p { margin: 0 0 1em; }
 .btn-accent:hover { background: var(--accent-dark); }
 .btn-primary { background: var(--navy); color: #fff; }
 .btn-primary:hover { background: var(--navy-2); }
+.btn-outline { border-color: var(--navy); color: var(--navy); }
+.btn-outline:hover { background: var(--navy); color: #fff; }
+.why-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 .btn-ghost { border-color: rgba(255, 255, 255, 0.7); color: #fff; }
 .btn-ghost:hover { background: #fff; color: var(--navy); }
 
@@ -178,7 +181,7 @@ p { margin: 0 0 1em; }
 
 .extras { margin-top: 40px; text-align: center; }
 .extras h3 { font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
-.extras-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; max-width: 760px; margin: 0 auto; text-align: left; }
+.extras-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 980px; margin: 0 auto; text-align: left; }
 .extra { padding: 18px 22px; border: 1px dashed var(--line); border-radius: var(--radius); background: var(--bg-alt); }
 .extra strong { display: block; color: var(--navy); }
 .extra span { color: var(--muted); font-size: 0.95rem; }
@@ -346,5 +349,5 @@ p { margin: 0 0 1em; }
 }
 
 /* Scripture */
-.verse { margin-top: 24px; padding-left: 16px; border-left: 3px solid var(--accent); font-style: italic; color: var(--muted); font-size: 0.98rem; }
+.verse { margin: 28px 0 0; padding-left: 16px; border-left: 3px solid var(--accent); font-style: italic; color: var(--muted); font-size: 0.98rem; }
 .verse cite { display: block; font-style: normal; font-weight: 600; color: var(--navy); margin-top: 4px; }
