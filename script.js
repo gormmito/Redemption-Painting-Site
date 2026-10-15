@@ -33,6 +33,14 @@ const GALLERY_PHOTOS = [
   { file: "stained-fence", cat: "fences", caption: "Fence stain" },
 ];
 
+// Customer reviews, copied word for word from Google or Yelp.
+// Example: { text: "Greg did an amazing job...", name: "Maria G.", source: "Google" }
+const REVIEWS = [
+  { text: "\u2026a man of integrity and exceptionally skilled at his craft. He takes pride in his work, pays attention to the details, and stands behind the quality of his service.", name: "Chico D.", source: "Google" },
+  { text: "We used Redemption Painting for our current home and our previous home. Greg does great work and very professional.", name: "Jodi R.", source: "Google" },
+  { text: "Redemption Painting is professional, conscientious, and a superior value. Don\u2019t hesitate to call them for a reasonable quote.", name: "Lorie Y.", source: "Google" },
+];
+
 // Before & after pairs shown side by side
 const BEFORE_AFTER = [
   { before: "cottage-before", after: "cottage-after", caption: "Cottage exterior" },
@@ -153,5 +161,23 @@ BEFORE_AFTER.forEach(({ before, after, caption }) => {
   pair.appendChild(cap);
   baList.appendChild(pair);
 });
+
+// Reviews
+const reviewList = document.getElementById("review-list");
+REVIEWS.forEach(({ text, name, source }) => {
+  const card = document.createElement("figure");
+  card.className = "review";
+  const stars = document.createElement("div");
+  stars.className = "stars";
+  stars.setAttribute("aria-label", "5 stars");
+  stars.textContent = "\u2605\u2605\u2605\u2605\u2605";
+  const quote = document.createElement("blockquote");
+  quote.textContent = text;
+  const cap = document.createElement("figcaption");
+  cap.textContent = source ? `${name}, ${source}` : name;
+  card.append(stars, quote, cap);
+  reviewList.appendChild(card);
+});
+reviewList.hidden = REVIEWS.length === 0;
 
 document.getElementById("year").textContent = new Date().getFullYear();
