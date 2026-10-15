@@ -127,7 +127,12 @@ p { margin: 0 0 1em; }
     linear-gradient(135deg, #161616 0%, #3a1416 100%);
 }
 .hero-inner { position: relative; max-width: 1140px; }
-.hero h1 { max-width: 14ch; }
+.hero h1 { max-width: 16ch; font-size: clamp(2.3rem, 5.5vw, 3.8rem); margin-bottom: 0.25em; }
+.hero h1 .accent { display: block; }
+.hero-sub {
+  font-family: var(--font-head); font-size: clamp(1.2rem, 2.6vw, 1.6rem); font-weight: 500;
+  letter-spacing: 0.22em; text-transform: uppercase; color: #e4e4e4; margin-bottom: 1.1em;
+}
 .hero .accent { color: #e2575c; }
 .hero .eyebrow { color: #e9d6d6; }
 .hero-lead { font-size: 1.15rem; max-width: 46ch; color: #e4e4e4; }
