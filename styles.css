@@ -218,6 +218,8 @@ p { margin: 0 0 1em; }
 
 .gallery figure[hidden] { display: none; }
 .gallery-more { display: flex; margin: 28px auto 0; }
+.gallery-empty { text-align: center; color: var(--muted); padding: 40px 16px; border: 1px dashed var(--line); border-radius: var(--radius); background: var(--bg); }
+.gallery-empty a { color: var(--ink); font-weight: 600; }
 .gallery-more[hidden] { display: none; }
 
 .filters { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: -16px 0 28px; }
