@@ -4,7 +4,7 @@
 
 // Job photos live in images/work (full size) and images/work/thumbs (grid size).
 // To add one: process it to both folders, then add a line here.
-// Categories: exterior, interior, cabinets, washing, fences, waterproofing
+// Categories: exterior, interior, washing, fences, waterproofing
 const GALLERY_PHOTOS = [
   { file: "white-house-front", cat: "exterior", caption: "Stucco & siding, black trim" },
   { file: "white-stucco-black-trim", cat: "exterior", caption: "White stucco with black trim" },
@@ -24,9 +24,9 @@ const GALLERY_PHOTOS = [
   { file: "sage-bedroom", cat: "interior", caption: "Bedroom walls" },
   { file: "dark-vanity-bath", cat: "interior", caption: "Bathroom walls & vanity" },
   { file: "white-vanity-bath", cat: "interior", caption: "Bathroom walls & trim" },
-  { file: "charcoal-kitchen", cat: "cabinets", caption: "Charcoal kitchen cabinets" },
-  { file: "charcoal-kitchen-2", cat: "cabinets", caption: "Cabinets & island" },
-  { file: "glazed-cabinets", cat: "cabinets", caption: "Glazed cabinet finish" },
+  { file: "charcoal-kitchen", cat: "interior", caption: "Charcoal kitchen cabinets" },
+  { file: "charcoal-kitchen-2", cat: "interior", caption: "Cabinets & island" },
+  { file: "glazed-cabinets", cat: "interior", caption: "Glazed cabinet finish" },
   { file: "fence-stain-half", cat: "fences", caption: "Fence restoration: before & after" },
   { file: "driveway-cleaning", cat: "washing", caption: "Driveway pressure washing" },
   { file: "stained-gate", cat: "fences", caption: "Washed & stained gate" },
